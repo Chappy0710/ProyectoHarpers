@@ -1,0 +1,216 @@
+hr{
+    margin-top: 2px;
+    margin-bottom: 2px;;
+    background-color: brown;
+    height: 3px;
+}
+/*Menu*/
+.navbar{
+    background-color: #000;
+    min-height: 50px;
+}
+.nav-link{
+    color: #ffffff;
+}
+.logo-brand{
+    min-width: 120px;
+    max-width: 10px;
+}
+.navbar-toggler:focus{
+    outline:none;
+}
+/*cierre del menu*/
+.linea{
+    border-bottom: solid 2px #FBB03B;
+    color: #902729;
+}
+
+@media (min-width: 200px) and (max-width: 930px) {
+  .titulohead{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .variedad{
+    font-size: 24px;
+  }
+}
+/*circulos*/
+.glyphicon-ring {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 4px solid  #902729;
+  color: #902729;
+  display: inline-table;
+  text-align: center;
+  background-color: #fff;
+}
+.glyphicon-ring .glyphicon-bordered {
+  font-size: 80px;
+  vertical-align: middle;
+  display: table-cell;
+}
+.texto h4{
+  color: #902729;
+}
+.texto p{
+  color: rgb(112, 110, 110);
+}
+/*cierre de circulos*/
+/*inicio de tarjetas*/
+.flip-card {
+  background-color: transparent;
+  perspective: 3000px;
+  height: 400px;
+  width: 300px;
+  border: 0px;
+  margin: auto;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  /* duracion de la animacion */
+  transform-style: preserve-3d;
+}
+
+/* Crea la animación para girar la tarjeta de forma horizontal cuando el ratón se pone encima*/
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Estructura básica de las dos caras */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  /* necesario para posicionar las dos caras a la misma altura */
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  /* nos genera una sombra */
+  box-shadow: 10px 10px 28px -5px rgba(0, 0, 0, 0.3);
+  border-radius: 0.5rem;
+}
+
+/* Estructura específica de la cara frontal */
+
+.flip-card-front img {
+  width:100%;
+  height:100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.flip-card-front .mask {
+  position: absolute;
+  /* hacemos que ocupe toda la imagen */
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  
+  /* redondeamos la mascara para que se ajuste a la imagen */
+  border-radius: 0.5rem;
+  /* Posición del título en la parte frontal de la tarjeta */
+}
+
+.flip-card-front .mask .align-end {
+  color: #fff;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+}
+
+/* Estructura específica de la cara trasera */
+.flip-card-back {
+  background-color:#902729;
+  transform: rotateY(180deg);
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+.postre{
+  color: #902729;
+  font-weight: bold;
+}
+.postre2{
+  color: #ffffff;
+  font-weight: bold;
+}
+/*cierre de tarjetas*/
+#titulo2{
+  color: #fff;
+}
+
+/*Inicio de acordeon*/
+.acordeonPrincipal{
+  background-color: #902729;
+}
+.acordeonGris{
+  background-color: #cccccc;
+  color: #000;
+}
+.acordeonBlanco{
+  background-color: #F2F2F2;
+  color: #000;
+}
+.cuadrosAcordeon{
+  height: 50px;
+}
+.textoAcordeon{
+  color: #902729;
+  font-size: 25px;
+}
+.titulosAcordeon{
+  font-family: 'Sirin Stencil', cursive;
+  color: #fff;
+}
+.precio{
+  font-weight: bold;
+  color: #902729;
+  float: right;
+  margin: 5px 20px 5px 0;
+  font-size: 20px;
+}
+/*Cierre del acordeon*/
+/*footer*/
+.footer{
+  background-color: black;
+}
+.horario{
+  color: #fff;
+  text-align: center;
+}
+.textoFooter{
+  color: #fff;
+}
+.ubicacion{
+  color: #fff;
+}
+.icon-facebook2::before {
+  color: #fff;
+ font-size: 30px;
+ margin-right: 5px;
+}
+.icon-instagram::before {
+  color: #fff;
+ font-size: 30px;
+}
+.glovo{
+  color: rgb(18, 158, 30);
+  font-size: 25px;
+  font-family: bold;
+}
+.icon-ubereats{
+  font-size: 40px;
+  margin-right: 10px;
+}
+.credito{
+  color: #fff;
+  text-align: center;
+}
+/*cierre del CSS index*/

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Adrián Bonilla Carrión">
+        <meta name="keywords" lang="es" content="panaderia, postres, cafeteria">
+        <title>Panaderia </title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/contacto.css">
+        <link rel="stylesheet" href="fonts/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Sirin+Stencil&family=Vast+Shadow&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="js/formulario.js">
+
+    </head>
+    <body>
+        <div class="container-fluid justify-content-center">
+            <!--Menu-->
+            <nav class="navbar navbar-expand-lg navbar-dark badge-dark ">
+                <a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo" class="logo-brand"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html" id="inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pedido.html" id="Pedido">Pedido</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="galeria.html" id="galeria">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicio.html" id="servicio">Servicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nosotros.html" id="nosotros">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html" id="contacto">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <hr>
+            <!--Fin del menu-->
+            <header>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="titulo">
+                            <img src="img/contactenos.png" alt="textura">
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <hr>
+            <br>
+            <div class="container-fluid">
+                <div class="row marco">
+                    <div class="col-lg-7" style="background-image: url(img/desk.jpg); width: 100%;">
+                        <div class="well well-sm">
+                            <form class="form-horizontal text-center" method="post" name="fvalida">
+                                <fieldset>
+                                    <legend style="color: #fff; font-weight: bold;">DEJA TU MENSAJE EN EL SIGUIENTE FORMULARIO</legend>
+
+                                    <div class="form-group">
+                                        <div class="col-md-8 justify-content-center">
+                                            <input name="nombre" type="text" placeholder="Nombre" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-md-4">
+                                            <input type="text" name="edad" maxlength="2" placeholder="Edad" class="form-control">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="col-md-8">
+                                            <input name="usuario" type="text" placeholder="Correo Electronico" class="form-control">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="col-md-8">
+                                            <textarea class="form-control"  name="comentario" placeholder="comentario......." rows="7"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-md-8 text-center">
+                                            <input type="button" id="botonEnvio" class="btn btn-primary btn-lg" value="Enviar" onclick="valida_Datos()"></input>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 mt-5 justify-content-start">
+                        <legend class=" header">… O PONGASE EN CONTACTO CON NOSOTROS</legend>
+                        <p>Estamos ubicados en Escazú, frente al parque de dicho lugar, ven y disfruta de un ambiente tranquilo.</p>
+                        <p>Pongase hoy en contacto con nosotros para solicitar presuesto, hacer pedidos, solicitar información, etc. Estaremos encantados de resolver cualquier duda que necesite.</p>
+                        <span class="icon-location text-center d-flex iconosnegros"> San José - Escazú - Costa Rica </span>
+                        <br>
+                        <span class="icon-phone text-center d-flex iconosnegros">  Tel: 8540-3470</span>
+                        <br>
+                        <span class="icon-envelop text-center d-flex  iconosnegros">  info@panaderiaHarpers.com </span>
+                        <br>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.1677699401207!2d-84.14722678448962!3d9.919981692906058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0fdf7184600a3%3A0xa84bedf763f8aad9!2sPanaderia%20y%20Reposteria%20HARPER&#39;S!5e0!3m2!1ses-419!2scr!4v1606435968899!5m2!1ses-419!2scr" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+                <section>
+                    <div class="row mt-5">
+                        <div class="col-lg-7 m-auto cajaTexto">
+                            <p class="d-flex justify-content-center text-center ">CONSULTE SIN COMPROMISO, ESTAMOS A SU DISPOSICION... TE ESPERAMOS...</p>
+                        </div>
+                    </div>
+                </section>
+                <div class="row mt-5">
+                    <div class="col-lg-12">
+                        <img src="img/fondoContacto.png" alt="fondo" width="100%">
+                    </div>
+                </div>
+            </div>
+
+            <!--inicio del footer-->
+            <section class="footer container-fluid mt-5 mb-5">
+                <div class="row mt-5">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                        <p class="horario">Lunes - Domingo/ 6:30am - 9:00pm | Tel: 8540-3470</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-12 text-center align-content-between textoFooter">
+                        <p class="text-left">Contacto:</p> 
+                        <span class="icon-location ubicacion text-center d-flex ml-4">  San José - Escazú - Costa Rica </span>
+                        <br>
+                        <span class="icon-phone ubicacion text-center d-flex ml-4">  Tel:8540-3470</span>
+                        <br>
+                        <span class="icon-envelop ubicacion text-center d-flex ml-4">  info@panaderiaHarpers.com </span>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-12 text-center align-content-between textoFooter">
+                        <p>Siguenos en:</p> 
+                        <a href="https://www.facebook.com/profile.php?id=100094692098319_text=true&width=500" target="_blank">
+                            <span class="icon-facebook2"></span>
+                        </a>
+                        <a href="https://www.instagram.com/_harpers/"><span 
+                                class="icon-instagram"></span></a> 
+                        <p>Contamos con:</p>
+                        <a href="#"><span class="icon-ubereats mb-5"></span></a>
+                        <a href="#"><span class="glovo mb-5">Glovo!</span></a>
+                        <p>Formas de pago:</p>
+                        <a href="#"><span class="icon-paypal mb-5" style="font-size: 50px;"></span></a>
+                        <a href="#"><span class="icon-mastercard mb-5"  style="font-size: 50px;"></span></a>
+                        <a href="#"><span class="icon-visa mb-5"  style="font-size: 50px;"></span></a>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-12">
+                        <p class="credito ">Created By <b style="color: darkred;">A-WEB technologies  </b>|2020 All rights reserved</p>
+                    </div>
+                </div>
+            </section>
+            <!--Fin del footer-->  
+        </div>
+        <script src="js/formulario.js"></script>
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>

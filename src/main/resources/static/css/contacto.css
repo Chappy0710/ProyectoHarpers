@@ -1,0 +1,101 @@
+hr{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    background-color: brown;
+    height: 2px;
+}
+/*Menu*/
+.navbar{
+    background-color: #000;
+    min-height: 50px;
+}
+.nav-link{
+    color: #ffffff;
+}
+.logo-brand{
+    min-width: 120px;
+    max-width: 10px;
+}
+.navbar-toggler:focus{
+    outline:none;
+}
+/*cierre del menu*/
+/*Inicio del header*/
+.titulo img{
+  width: 100%;
+}
+/*fin del header*/
+.header {
+    color: brown;
+    font-size: 20px;
+    font-weight: bold;
+}
+.bigicon {
+    font-size: 35px;
+    color: #36A0FF;
+}
+.marco{
+    border: 1px solid brown;
+}
+.form-control{
+    border-radius: 10px;
+    margin-top: 30px;
+}
+.humano{
+  size: 25px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.iconosnegros{
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.cajaTexto{
+  background-color: cornsilk;
+  border-left: 5px solid #902729;
+}
+.cajaTexto p{
+  font-size: 28px;
+  color: #902729;
+}
+
+
+/*footer*/
+.footer{
+    background-color: black;
+  }
+  .horario{
+    color: #fff;
+    text-align: center;
+  }
+  .textoFooter{
+    color: #fff;
+  }
+  .ubicacion{
+    color: #fff;
+  }
+  .icon-facebook2::before {
+    color: #fff;
+   font-size: 30px;
+   margin-right: 5px;
+  }
+  .icon-instagram::before {
+    color: #fff;
+   font-size: 30px;
+  }
+  .glovo{
+    color: rgb(18, 158, 30);
+    font-size: 25px;
+    font-family: bold;
+  }
+  .icon-ubereats{
+    font-size: 40px;
+    margin-right: 10px;
+  }
+  .credito{
+    color: #fff;
+    text-align: center;
+  }

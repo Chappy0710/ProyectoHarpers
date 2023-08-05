@@ -1,0 +1,109 @@
+hr{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    background-color: brown;
+    height: 2px;
+}
+/*Menu*/
+.navbar{
+    background-color: #000;
+    min-height: 50px;
+}
+.nav-link{
+    color: #ffffff;
+}
+.logo-brand{
+    min-width: 120px;
+    max-width: 10px;
+}
+.navbar-toggler:focus{
+    outline:none;
+}
+/*cierre del menu*/
+/*Inicio del header*/
+.titulo img{
+  width: 100%;
+}
+/*fin del header*/
+/*circulos*/
+
+.glyphicon-ring {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 4px solid  #902729;
+    color: #902729;
+    display: inline-table;
+    text-align: center;
+    background-color: #fff;
+  }
+  .glyphicon-ring .glyphicon-bordered {
+    font-size: 80px;
+    vertical-align: middle;
+    display: table-cell;
+  }
+  .texto h4{
+    color: #902729;
+  }
+  .texto p{
+    color: rgb(112, 110, 110);
+  }
+/*cierre de circulos*/
+
+.cajaTexto{
+    background-color: cornsilk;
+    border-left: 5px solid #902729;
+    border-right: 5px solid #902729;
+  }
+  .cajaTexto p{
+    font-size: 28px;
+    color: #902729;
+  }
+  /*formulario*/
+  .form-control{
+    border-radius: 10px;
+    margin-top: 30px;
+}
+.humano{
+  size: 25px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+  /*cierre del formulario*/
+/*footer*/
+.footer{
+    background-color: black;
+  }
+  .horario{
+    color: #fff;
+    text-align: center;
+  }
+  .textoFooter{
+    color: #fff;
+    margin-top: 15px;
+  }
+  .ubicacion{
+    color: #fff;
+  }
+  .icon-facebook2::before {
+    color: #fff;
+   font-size: 30px;
+   margin-right: 5px;
+  }
+  .icon-instagram::before {
+    color: #fff;
+   font-size: 30px;
+  }
+  .glovo{
+    color: rgb(18, 158, 30);
+    font-size: 25px;
+    font-family: bold;
+  }
+  .icon-ubereats{
+    font-size: 40px;
+    margin-right: 10px;
+  }
+  .credito{
+    color: #fff;
+    text-align: center;
+  }

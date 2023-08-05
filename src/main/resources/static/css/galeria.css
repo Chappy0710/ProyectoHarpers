@@ -1,0 +1,105 @@
+
+hr{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    background-color: brown;
+    height: 2px;
+}
+/*Menu*/
+.navbar{
+    background-color: #000;
+    min-height: 50px;
+}
+.nav-link{
+    color: #ffffff;
+}
+.logo-brand{
+    min-width: 120px;
+    max-width: 10px;
+}
+.navbar-toggler:focus{
+    outline:none;
+}
+/*cierre del menu*/
+.cajaTexto{
+    background-color: cornsilk;
+    border-left: 5px solid #902729;
+    border-right: 5px solid #902729;
+  }
+  .cajaTexto p{
+    font-size: 28px;
+    color: #902729;
+  }
+/*GALERIA 2*/
+  body {
+    position: relative;
+    height: 100%;
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+  }
+
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+/*CIERRE GALERIA 2*/
+/*footer*/
+.footer{
+    background-color: black;
+  }
+  .horario{
+    color: #fff;
+    text-align: center;
+  }
+  .textoFooter{
+    color: #fff;
+  }
+  .ubicacion{
+    color: #fff;
+  }
+  .icon-facebook2::before {
+    color: #fff;
+   font-size: 30px;
+   margin-right: 5px;
+  }
+  .icon-instagram::before {
+    color: #fff;
+   font-size: 30px;
+  }
+  .glovo{
+    color: rgb(18, 158, 30);
+    font-size: 25px;
+    font-family: bold;
+  }
+  .icon-ubereats{
+    font-size: 40px;
+    margin-right: 10px;
+  }
+  .credito{
+    color: #fff;
+    text-align: center;
+  }
