@@ -1,0 +1,24 @@
+/* Reset default margin and padding for buttons and body */
+body, button {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style for the button container to keep buttons side by side */
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+/* Style for the red buttons */
+.red-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 5px;
+  cursor: pointer;
+}
