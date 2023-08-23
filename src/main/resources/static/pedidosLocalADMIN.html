@@ -47,7 +47,114 @@
             </nav>
             <hr>
 
+            <!--Pedidos-->
+            
+            
+ <section th:fragment="botonesAgregar" class="py-4 mb-4 bg-light">
+                
+            </section>
 
+
+            <section th:fragment="agregarPedido">
+                <div id="agregarPedido" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header bg-info text-white">
+                                <h5 class="modal-title" th:text="#{accion.agregar}">Agregar Pedido</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div> 
+                            <form th:action="@{/pedido/guardar}" th:object="${pedido}"
+                                  method="POST" class="was-validated">
+                                <div class="modal-body">
+                                    <div class="form-group">
+                                        <label for="id_pedidoLocal" th:text="#{pedido.id_pedidoLocal}">Id</label>
+                                        <input type="number" class="form-control" name="id_pedidoLocal" required="true"/>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="nombreCliente" th:text="#{carro.nombreCliente}">nombreCliente</label>
+                                        <input type="text" class="form-control" name="nombreCliente" required="true"/>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="numeroTelefono" th:text="#{carro.numeroTelefono}">numeroTelefono</label>
+                                        <input type="number" class="form-control" name="numeroTelefono" required="true"/>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="descripcionPedido" th:text="#{pedido.descripcionPedido}">descripcionPedido</label>
+                                        <input type="text" class="form-control" name="descripcionPedido"/>
+                                    </div>    
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-primary" type="submit" th:text="#{accion.guardar}">Guardar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>        
+
+            <section th:fragment="listadoPedidos" id="pedidos">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4> Pedidos </h4>
+                                </div>
+                                <div th:if="${pedidos != null and !pedidos.empty}">
+                                    <table class="table table-stryped">
+                                        <thead class="thead-dark">
+                                            <tr>
+                                                <th th:text="#{pedido.id_pedidoLocal}">Id</th>
+                                                <th th:text="#{pedido.nombreCliente}">NombreCliente</th>
+                                                <th th:text="#{pedido.numeroTelefono}">NumeroTelefono</th>
+                                                <th th:text="#{pedido.descripcionPedido}">DescripcionPedido</th>
+                                                <th></th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr th:each="pedido : ${pedidos}">
+                                                <td> Numero Pedido</td>
+                                                <td> Nombre del cliente </td>
+                                                <td> Numero de telefono </td>
+                                                <td> Descripcion del pedido </td>
+                                                <td>
+                                                    <a sec:authorize="hasRole('ROLE_ADMIN')" th:href="@{/pedido/eliminar/}+${pedido.id_pedidoLocal}"
+                                                       class="btn btn-danger">
+                                                        <i class="fas fa-trash-can"></i> Eliminar Pedido
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <a sec:authorize="hasRole('ROLE_ADMIN')" th:href="@{/pedido/modificar/}+${pedido.id_pedidoLocal}"
+                                                       class="btn btn-success">
+                                                        <i class="fas fa-pencil"></i> Actualizar Pedido
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="text-center p-2" th:if="${pedidos == null or pedidos.empty}">
+                                    <span th:text="#{pedido.no_mostrar}">Lista vacía</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">                        
+                            <div class="card text-center bg-success text-white mb-3">
+                                <div class="card-body">
+                                    <h3 th:text="#{pedido.totalPedidos}">Total Pedidos</h3>
+                                    <h4 class="fs-2">
+                                        <i class="fas fa-users"></i> 
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            
+                        
             <!--Inicio del footer-->
             <section class="footer container-fluid mt-5 mb-5">
                 <div class="row mt-5">
@@ -82,7 +189,7 @@
                 </div>
                 <div class="row mt-5">
                     <div class="col-12">
-                        <p class="credito ">Created By <b style="color: darkred;">A-WEB technologies  </b>|2020 All rights reserved</p>
+                        <p class="credito ">Created By <b style="color: darkred;">Grupo #6 WB  </b>|2023 All rights reserved</p>
                     </div>
                 </div>
             </section>  

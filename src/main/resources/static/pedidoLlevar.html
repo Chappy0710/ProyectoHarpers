@@ -54,6 +54,79 @@
             <hr>
 
 
+            <section class="py-4 mb-4 bg-light">
+                
+                
+                
+                
+            </section>
+            
+            <!--Pedidos-->
+
+            <section th:fragment="editarPedido">            
+                <form method="POST"
+                      th:action="@{/pedido/guardar}"
+                      th:object="${pedido}"
+                      class="was-validated">
+                    <input type="hidden" name="id_pedidoLocal" th:field="*{id_pedidoLocal}"/> 
+                    <section th:replace="pedido/fragmentosPedido :: botonesEditar"/> 
+                    <div id="details"> 
+                        <div class="container"><div class="row">
+                                <div class="col"><div class="card">
+                                        <div class="card-header">
+                                            <h4> Ingresar un nuevo Pedido </h4>
+                                        </div>
+                                        <div class="card-body">                                        
+                                            <div class="form-group">
+                                                <label for="nombreCliente" th:text="#{pedido.nombreCliente}">NombreCliente </label>
+                                                <input type="text" class="form-control" name="nombreCliente" th:field="*{nombreCliente}"/>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="numeroTelefono" th:text="#{pedido.numeroTelefono}">NumeroTelefono </label>
+                                                <input type="number"  class="form-control" name="NumeroTelefono" th:field="*{NumeroTelefono}"/>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="descripcionPedido" th:text="#{pedido.descripcionPedido}">DescripcionPedido </label>
+                                                <input type="text"  class="form-control" name="descripcionPedido" th:field="*{descripcionPedido}"/>
+                                            <div class="form-group">
+                                                 <label for="Ubicacion" th:text="#{pedido.ubicacion}">Ubicacion </label>
+                                                 <input type="text"  class="form-control" name="ubicacion" th:field="*{ubicacion}"/>
+                                            </div>                                        
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </form>
+            </section>
+
+            <section th:fragment="botonesEditar">
+                <div id="actions" class="py-4 mb-4 bg-light">
+                    <div class="container">
+                        <div class="row">
+                            <div class="d-grid col-md-2 mx-auto">
+                                <a th:href="@{/pedido/listado}" class="btn btn-ligth btn-block">
+                                    <i class="fas fa-arrow-left"></i> Regresar
+                                </a>
+                            </div>
+                            <div class="d-grid col-md-2 mx-auto">
+                                <button type="submit" class="btn btn-success btn-block">
+                                    <i class="fas fa-check"></i> Guardar
+                                </button>
+                            </div>
+                            <div class="d-grid col-md-2 mx-auto">
+                                <a th:href="@{/pedido/eliminar/}+${pedido.id_pedidoLocal}"
+                                   class="btn btn-danger btn-block">
+                                    <i class="fas fa-trash"></i> Eliminar
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+
             <!--Inicio del footer-->
             <section class="footer container-fluid mt-5 mb-5">
                 <div class="row mt-5">
@@ -88,7 +161,7 @@
                 </div>
                 <div class="row mt-5">
                     <div class="col-12">
-                        <p class="credito ">Created By <b style="color: darkred;">A-WEB technologies  </b>|2020 All rights reserved</p>
+                        <p class="credito ">Created By <b style="color: darkred;">Grupo #6 WB  </b>|2023 All rights reserved</p>
                     </div>
                 </div>
             </section>  
